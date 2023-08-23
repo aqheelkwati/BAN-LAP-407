@@ -1,0 +1,3 @@
+Place Food price(per plate) ratings(out of 10) 
+blore bisibele bath 200 4.5 
+blore bisibele bath 200 4.5 

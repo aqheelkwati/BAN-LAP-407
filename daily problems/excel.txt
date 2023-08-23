@@ -1,0 +1,20 @@
+1.=sum()
+=MAX()
+=MIN()
+=AVERAGE()
+=IF(condition,True o/p ,False o/p)
+2.relative reference
+3.absolute reference--- $C2 for expression used in same row
+		      C$2 for same column	
+4.Conditional formating
+5. =OR(logic1,logic2,....) Returns True if any 1 is True
+6.Inserting Chart
+7.Text wrapper 
+8.Data-->Text to column(To split a column)
+9.sumif,sort,filter, pivot tables Used to create charts, pie charts.
+
+Cars Database
+1.opening text file in Excel.
+2.left(),look up table(vlookup()),mid(),concatenate(),right(),upper().
+look up table(vlookup()) Takes a table & adds fullforms to acronyms.
+3.Pivot table,Scattered chart

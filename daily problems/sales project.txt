@@ -1,0 +1,2 @@
+4. removing non applicable regions, zero & negative prices, converting currencies into 1 type.
+5. Removing duplicate currencies & Creating a Powerbi Report.

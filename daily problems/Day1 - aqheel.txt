@@ -1,0 +1,75 @@
+
+1) in a given array, 
+    this is just an example: 2 2 1 -3 4 3 1 -8 6 -2 -1
+    please find the length of longest sub array with sum=0
+    try to complete it on time complexity of o(n**2)   [EASY]
+2) try to complete same question in o(n) time complexity [MEDIUM]
+3) find the local minima of above sub array[COMPLEX]
+-----------------------------------------------------------------------------------------------------------------------
+1) in a given array, 
+    this is just an example: 2 2 1 -3 4 3 1 -8 6 -2 -1
+    please find the length of longest sub array with sum=0
+    try to complete it on time complexity of o(n**2)   [EASY]
+------------------------------------------------------------------------------------------------------------------------
+def maxsubarr(ar):
+    maxlen=0
+    for i in range(len(ar)):
+        sum=ar[i]
+        for j in range(i+1,len(ar)):
+            sum+=ar[j]
+            if sum==0:
+                maxlen=max(maxlen,j-i+1)
+    return maxlen
+a=[15,-2,2,-8,1,7,10,13]
+b=[2,8,-3,-5,2,-4,6,1,2,1,-3,4]
+c=[2,2,1,-3,4,3,1,-8,6,-2,-1]
+print(maxsubarr(a)) #5
+print(maxsubarr(b)) #8
+print(maxsubarr(c)) #8
+---------------------------------------------------------------------------------------------------------------------------
+2)  in a given array, 
+    this is just an example: 2 2 1 -3 4 3 1 -8 6 -2 -1
+    please find the length of longest sub array with sum=0
+    try to complete same question in o(n) time complexity [MEDIUM]
+---------------------------------------------------------------------------------------------------------------------------
+def maxsubarr(ar):
+    hashmap={0:-1}
+    sum=0
+    maxlen=0
+    # subarr=[]
+    for i in range(len(ar)):
+        sum=sum+ar[i]
+        if sum in hashmap:
+            x=hashmap[sum]
+            maxlen=max(maxlen,i-x)
+            # if maxlen==i-x:
+            #     subarr=ar[x+1:i+1]
+        else:
+            hashmap[sum]=i
+    # print(subarr)
+    return maxlen
+
+a=[15,-2,2,-8,1,7,10,13]
+b=[2,8,-3,-5,2,-4,6,1,2,1,-3,4]
+c=[2,2,1,-3,4,3,1,-8,6,-2,-1]
+print(maxsubarr(a)) #5
+print(maxsubarr(b)) #8
+print(maxsubarr(c)) #8
+----------------------------------------------------------------------------------------------------------------------------
+3) find the local minima of above sub array[COMPLEX]
+----------------------------------------------------------------------------------------------------------------------------
+def localminima(arr,low,high,n):
+    mid=low+(high-low)//2
+    if (mid==0 or arr[mid-1]>arr[mid]) and (mid==n-1 or arr[mid]<arr[mid+1]):
+        return mid
+    elif (mid>0 and arr[mid-1]<arr[mid]):
+        return localminima(arr,low,mid-1,n)
+    return localminima(arr,mid+1,high,n)
+
+arr=[-3, 4, 3, 1, -8, 6, -2, -1]
+n=len(arr)
+print(localminima(arr,0,n-1,n)) # ans=index 4
+
+a=[-2, 2, -8, 1, 7]
+n1=len(a)
+print(localminima(a,0,n1-1,n1)) # ans=index 2           

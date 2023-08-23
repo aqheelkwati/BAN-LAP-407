@@ -1,0 +1,86 @@
+---------------------------------------4.Tables--------------------------------------------------------
+4.3- Conditional Formating.
+4.4-Aggeregation in table (sum,average,percentage)
+4.5- Creating Matrix--> create a table Then click on it & then on Matrix
+(View->Dropdown->customise current theme->Text------To change the text size or else to the whole table )
+4.6- Conditional formating for matrix (It is available only for values)
+4.7- Creating Hierarchy in matrix.??
+4.8- Matrix Total & Subtotals.
+4.9-Changing number formating in matrix & Table.(Instear of Field formating , new version have specific column)
+
+-----------------------------------------5.Charts------------------------------------------------------
+5.1-Line charts. (In format use lines to find Join shape)
+5.2-Drill down in line chart.
+format
+	x axis->type->categorial
+5.3 - Area Chart. (Everything is same as Line chart )
+5.4 - Line vs column chart
+	a) Line And clustered column chart- It has x,y,line axes. It has column legend Which is same as legend.
+	b) line and stacked column chart- It is same as the above but is used to compare the performance between different
+	   years(x -axis)
+5.5- scattered chart(Only BY DEFAULT animation chart in powerbi) IMP
+	instead of 'details axis' we have 'values' in new version.
+5.6 - Waterfall chart
+5.7- Tree Map. (Instead of 'group' there is 'category')
+5.8- Gauge Chart using with pie chart.
+
+-------------------------------------6.Cards and Filters(Cards shoulb be used with charts or tables)---------------------------------------------------------
+6.1- Number cards. using with maps or tables etc.
+	border??
+6.2 - Text cards and filtering them.
+6.2.1- formating a card.
+	format painter.
+6.3 - Date Card.
+6.3.1-Relative date filter (IMP)
+	it checks the current(computer) date with the data & creates a relation.
+6.4 - Multi row card. Using with pie charts etc.
+
+---------------6.5. Filters
+6.6- Filter on page.
+6.7- Filter on all pages.
+6.8- Drill through.???????
+we have to add a drill throgh field, which is the target field to drill through.
+ 
+--------------------------------7.Slicers(Should be used with charts or tables. )---------------------------------------
+7.1- How to create slicers. It is used along with charts Or Tables.
+7.2- Formating Text Slicers.
+	format->slicer setting->selection->multi-selection(off)
+	*Instead of orientation we have style in new version (format->slice setting->options->style->tiles)
+7.3- Date slicers (IMP)
+7.4- Formating date slicer
+ In order to select 'Tiles' Date should not be in hierarchial manner
+7.5-Number slicer
+if we select anything in slicer it considers it as minimum(atleast 3 or atleast 7)
+
+------------------------------------8. Advance charts(customised by 3rd party)---------------------------------------
+(Need to have a powerbi account using company or student mail id)
+
+-------------------------------------9 inserting ----------------------------------------------
+9.1 Insert image
+9.2 Inserting Text
+9.3- Inserting shapes in Powerbi
+	To chnge color of box --go to shape->style->color
+9.4- Insert buttons (It is same as shapes)
+	* Not all buttons have default actions
+	* we can apply action through Format
+	* To use that action click ctrl+button
+9.5- Adding action (Web url action)
+	* we can add actions to images also
+	select  image/button etc -> format-> action->type(web url) -> we can also add tooltip(floating messsage)
+	ctrl+click
+9.6- Action-Page navigation
+ 	* we can use black button & add text(in style) & action to make it as navigation button
+	* we can also use back button to come back to main page.
+9.7- Ation- bookmark
+we have to create a bookmark before using it as a button.
+a.view(on top)->bookmark
+b.add a bookmark named all visible
+c.click selection (on top) it will open selection optins
+d. do unsee to the items you need to hide
+e. create another bookmark named hide all
+f. Go to buttons action & apply.
+
+9.8 Action- Drill through.  
+--------------------------------------------------------------------------
+10.6 - Creating a dashboard using report
+10.7 - Making Dashboard Interactive.

@@ -1,0 +1,65 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int
+main ()
+{
+  char opt;
+  printf ("Conversion Calculator....\n");
+
+  float amt;
+  while (1)
+    {
+      printf("Enter the input character. q to quit\n       1. kms to miles\n       2. inches to foot\n       3. cms to inches\n       4. pound to kgs\n       5. inches to meters\n");
+      scanf (" %c", &opt); // if space before %c is not given then it
+                           // prints above printf statements twice
+
+      switch (opt)
+	    {
+
+	   case 'q':
+	        printf ("exiting program");
+	        goto end;
+	        break;
+	    case '1':
+	        printf ("enter kms\n");
+	        scanf ("%f", &amt);
+	        printf ("%0.1f kms is equal to %0.3f miles \n ", amt, amt * 0.621);
+	        break;
+	    case '2':
+	        printf ("enter inchess\n");
+	        scanf ("%f", &amt);
+	        printf ("%0.1f inches is equal to %0.3f foot \n ", amt,
+		    amt * 0.0833);
+	        break;
+	    case '3':
+	        printf ("enter pound\n");
+	        scanf ("%f", &amt);
+	        printf ("%0.1f pound is equal to %0.3f kg \n ", amt, amt * 0.454);
+	        break;
+	    case '4':
+	        printf ("enter inches\n");
+	        scanf ("%f", &amt);
+	        printf ("%0.1f inches is equal to %0.3f meter \n ", amt,
+		    amt * 0.0254);
+	        break;
+	
+	    default:
+            printf("In default now\n");
+            break;
+
+
+
+	    }
+    }
+    end:
+
+  return 0;
+}

@@ -1,0 +1,12 @@
+https://m-valid
+http s://m-Invalid
+https://www.google.com/-valid
+https://www.Yahoo.com/-valid
+https://www.Instagram.com/-valid
+https://www.Twitter.com/-valid
+https://m-valid
+http s://m-Invalid
+https://www.google.com/-valid
+https://www.Yahoo.com/-valid
+https://www.Instagram.com/-valid
+https://www.Twitter.com/-valid

@@ -1,0 +1,30 @@
+0
+Single LinkedList-working, Implement methods - isEmpty, len, search, addLast, addFirst, addAny, removeLast, removeFirst, removeAny 
+1
+Circular Single LinkedList-working, Implement methods - isEmpty, len, search, addLast, addFirst, addAny, removeLast, removeFirst, removeAny
+2
+.Golang Variable and Data Types,Python Variables and Data Types,Basic Linux Commands.
+3
+Completed Arrays and slices and some basic linux commands
+4
+Golang Pointers,Maps,Doubly linked list,Basic Linux Commands                                                                                                                                                                                                                                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
